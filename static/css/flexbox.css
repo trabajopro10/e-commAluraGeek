@@ -1,0 +1,201 @@
+/*.headerPrincipal-titulo{
+   /* display: inline-block; /* Para que los items queden uno del lado del otro  
+   /* vertical-align: middle; /* Alinea el item de manera vertical 
+}
+
+.headerPrincipal-nav{
+    display: inline-block; /* Para que los items queden uno del lado del otro  
+    vertical-align: middle; /* Alinea el item de manera vertical 
+}*/
+/* CONFIGURANDO NUESTRO HEADER */
+.headerPrincipal .container{
+    display: flex; /* Tener en la página unos items facilmente manipulables */
+    align-items: center; /* Centrar los item alinearlos*/
+    justify-content: space-between; /* Colocar espacio entre items que trabajan con flex*/
+                 /* este espacio lo ha creado entre el titulo y las cajas y se toma todo
+                 el espacio que puede ocupar dentro de la  página */
+
+}
+
+
+/* Ahora dar el formato de presentación a los elementos que conforman el menú, tomamos
+  la clase padre headerPrincipal-nav */
+.headerPrincipal-nav {
+    display: flex;
+}
+
+/* Imágenes nuestros cursos */
+.contenidoPrincipal .contenidoPrincipal-cursos{
+    display:flex; /* Se coloca un elemento al lado del otro */
+   flex-wrap: wrap; /* Cuando termina la lista en el spacio del container 
+                       se envuelve e inicia desde arriba como una nueva columna */
+}
+
+/* Este código fue un ejemplo, donde se invirtió el order de los elementos. */
+
+/*.contenidoPrincipal-cursos {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+  }*/
+
+/* Cada item se coloca uno al lado del otro y se da la lista en columnas */
+.contenidoPrincipal-cursos-link{
+    display: flex; /* Los items habían quedado muy juntos, entonces se busca la clase 
+                      específica y se coloca uno al lado del otro */
+    width: 23%;    /* Se coloca un espacio del 23% del espacio para ser ocupado 
+                      por todos los elementos */
+}
+
+/* El texto queda al costado derecho del video */
+.videoSobre .container{
+    display: flex;
+    height: 300px;
+}
+
+/* Centra el texto al costado que dice 
+   Ventaja de Mini ALura */
+.videoSobre-sobre{
+    text-align: center;
+    display: flex; /* Colocaa el texto de Mini Alura al costado izquierdo del otro texto que dice 
+    Estudia donde quiera Nuevos cursos ... */
+    flex-direction: column; /* flex-direction los coloca enforma ordenada uno encima del otro */
+    flex-grow: 1;
+}
+
+/* El flex-group hace que el elemento crezca respecto de los otros dentro del mismo espacio
+   para el caso si colocamos 1 crece un poco si colocamos 2 crece mas y así sucesivamente */
+.videoSobre-sobre-list{
+    flex-grow: 1;
+}
+
+/* Video */
+.videoSobre-video{
+    flex-grow: 1;
+    
+}
+
+/* Área de cursos */
+
+.rodapePrincipal-navMap-list{
+    display: flex; /* Coloca los elemento uno al lado del otro*/
+    flex-direction: column; /* Por defecto es row, y hemos colocado columnas 
+                            así hay un título y debajo los items que le corresponden*/
+    height: 260px;   /* Le da un tamaño de 260 píxeles a cada columna para que no crezca hacia abajo fuera del contenedor*/
+    flex-wrap:  wrap; /* Cuandi cumple la altura de 260px sube y coloca la otra columna*/
+}
+
+/* Configurar el footer, colocando el logo a un constado y el contacto al otro */
+.rodapePrincipal-patrocinadores .container{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+/* dentro del footer, distribuir de forma uniforme las imágenes */
+.rodapePrincipal-patrocinadores-list{
+    display: flex;
+    align-items: center;
+    /*justify-content: space-around; /* Espacio alrededor de los elementos */
+    justify-content: space-between; /* Espacio entre */
+    width: 60%;
+}
+
+/* Formulario donde está el contacto */
+.rodapePrincipal-contatoForm{
+    margin-left: 5%;
+    width: 35%; /* Para que no quede pegado Casa Código y el Contacto */
+}
+
+/* Contiene el texto Entre en contacto, la caja donde se escribe el contacto y
+   el botón enviar */
+.rodapePrincipal-contatoForm-fieldset{
+    display: flex; /* Permite que el botón enviar suba a la derecha de contacto */
+}
+
+
+
+/* Presentación Responsive */
+@media(max-width: 768px) {
+    .headerPrincipal-nav, .videoSobre .container,.rodapePrincipal-navMap .rodapePrincipal-navMap-list{
+        flex-direction: column;
+    }
+    /* Encabezado donde está el menú y donde cide Mini Alura */
+    .headerPrincipal .container{
+        flex-direction: column; /* Coloca en lugar de flex uno al lado del otro, con column los coloca
+                                uno debajo del otro*/
+        align-items: initial;  /* Para evitar que los items se vean alineados de forma horizontal y no vertical, se alinean 
+                                  al inicio */
+        text-align: center;    /* despues de tenerlos al inicio, se central los items */
+    }
+    
+    /* Bajo nuestros cursos se ven los íconos de todos los cursos con su descripción 
+    se coloca flex-direcction column para que se muestren uno debajo del otro */
+    .contenidoPrincipal-cursos{
+        flex-direction: column;
+        
+    }
+     /* Luego de colocar los íconos de los cursos uno debajo del otro, se define que ocupen el 
+        100% del espacio establecido */
+    .contenidoPrincipal-cursos-link{
+        width: 100%;   
+    }
+
+    /* Para el mapa de cursos haremos lo mismo que se hizo para los cursos de la parte superior 
+    .rodapePrincipal-navMap-list{
+        flex-direction: column;
+    }*/
+
+    /* El mapa de cursos que se estaba mostrando normalmente en columnas hacia la derecha con 
+       flex-wrap wrap, ahora con las dimensión responsive, la hemos colocado como flex-wrap nowrap y
+       se le había dado una altura, ahora la altura es height auto */
+    .rodapePrincipal-navMap-list{
+        height: auto;
+        flex-wrap: nowrap;
+    }
+
+    /* El espacio del video, recupere su altura de acuerdo al tamño de la pantalla */
+    .videoSobre .container{
+        height: auto;
+    }
+
+    /*A medida que se va reduciendo la pantalla el video se reduce un poco mas que la letra, colocando 
+      dos veces menor el tamaño del video. */
+    .videoSobre-video{
+        flex-grow: 2;
+        flex-shrink: 2;
+    }
+
+    /* Footer pasar de flex-direction flex a column*/
+    .rodapePrincipal-patrocinadores .container{
+        flex-direction: column;
+    }
+    /* Tomar el 100% del espacio dado en el Footer del formulario
+       donde dice Entre contacto */
+    .rodapePrincipal-contatoForm{
+        width: 100%;
+    }
+    
+    /* Los íconos de los patrocinadores se organizan 
+       en la parte superior */
+    .rodapePrincipal-patrocinadores-list{
+        align-items: center;
+        width: 100%;
+        margin: 0;
+    }
+
+    /* En el footer Los patrocinadores y los campos del formulario, se deben
+       centrar*/
+    .rodapePrincipal-contatoForm-fieldset{
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Colocar de primero el item que tiene el texto Nuestra App en el menú superior */
+    .headerPrincipal-nav-link-app{
+        order: -1;
+    }
+
+}
+
+
