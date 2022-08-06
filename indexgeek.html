@@ -3,25 +3,32 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Mini Alura | Cursos online</title>
+	<title>Alura Geek</title>
 	<link rel="stylesheet" href="static/css/reset.css">
 	<link rel="stylesheet" href="static/css/style.css">
-	<link rel="stylesheet" href="static/css/flexbox.css">
+	<link rel="stylesheet" href="static/css/responsivo.css">
+	<!--<link rel="stylesheet" href="static/css/flexbox.css">-->
 </head>
 <body>
 
 	<header class="headerPrincipal">
 		<div class="container">
-			<h1 class="headerPrincipal-titulo">  <!-- Lo llevamos a estilos de flexbox.css-->
-				<a href="#">Mini Alura</a>
-			</h1>
             <!-- Nav tiene todo el menú de navegación -->
-			<nav class="headerPrincipal-nav">  <!-- Lo llevamos a estilos de flexbox.css-->
-				<a class="headerPrincipal-nav-link" href="#">Home</a>
-				<a class="headerPrincipal-nav-link" href="#">Cursos</a>
-				<a class="headerPrincipal-nav-link" href="#">Sobre Alura</a>
-				<a class="headerPrincipal-nav-link" href="#">Contactos</a>
-				<a class="headerPrincipal-nav-link headerPrincipal-nav-link-app" href="#">Nuestra APP</a>
+			<nav class="headerPrincipal-nav">  <!-- Lo llevamos a estilos de flexbox.css-->		
+				<form class="tituloPrincipalForm" action="#">
+					<fieldset>
+						<div class="rodapePrincipal-contatoForm-fieldset"> 
+							<div class="clsdiv_logo_busqueda">
+								<img src="static/img/logo.png">
+								<div>
+										<input class="cls_campo_busqueda" type="search" name="campo-busqueda" id="id_busqueda" placeholder="Qué desea buscar?">
+								</div>
+							</div>
+							<button class="clsboton_login" type="submit" >Login</button>
+						</div>
+					</fieldset>
+				</form>
+				<img class="clsimgencabezado" src="static/img/Heroencabezado.png">
 			</nav>
 		</div>
 
@@ -29,46 +36,75 @@
 
 	<main class="contenidoPrincipal">
 		<div class="container">
-			<h2 class="subtitulo">Nuestros cursos</h2>
-
+			<h2 class="subtitulo">Star Wars</h2>
 			<nav>
-				<ul class="contenidoPrincipal-cursos">
-					<li class="contenidoPrincipal-cursos-link"><a href="#">Java</a></li>
-					<li class="contenidoPrincipal-cursos-link"><a href="#">PHP</a></li>
-					<li class="contenidoPrincipal-cursos-link"><a href="#">Ruby on Rails</a></li>
-					<li class="contenidoPrincipal-cursos-link"><a href="#">.NET</a></li>
-					<li class="contenidoPrincipal-cursos-link"><a href="#">Pascal</a></li>
-					<li class="contenidoPrincipal-cursos-link"><a href="#">Flexbox</a></li>
-					<li class="contenidoPrincipal-cursos-link"><a href="#">Desarrollo Web</a></li>
-					<li class="contenidoPrincipal-cursos-link"><a href="#">Java Web</a></li>
-					<li class="contenidoPrincipal-cursos-link"><a href="#">Javascript</a></li>
-					<li class="contenidoPrincipal-cursos-link"><a href="#">AngularJS</a></li>
-					<li class="contenidoPrincipal-cursos-link"><a href="#">TDD com C</a></li>
-					<li class="contenidoPrincipal-cursos-link"><a href="#">Redes de computadores</a></li>
-					<li class="contenidoPrincipal-cursos-link"><a href="#">MySQL</a></li>
-					<li class="contenidoPrincipal-cursos-link"><a href="#">MariaDB</a></li>
-					<li class="contenidoPrincipal-cursos-link"><a href="#">Postegres</a></li>
-					<li class="contenidoPrincipal-cursos-link"><a href="#">Lógica de programación</a></li>
-					<li class="contenidoPrincipal-cursos-link"><a href="#">Lógica de programación</a></li>
-					<li class="contenidoPrincipal-cursos-link"><a href="#">Lógica de programación</a></li>
+				<ul class="contenidoPrincipal-starwars">
+					<div class="clsdiv_starwars_elements">	
+						<li class="contenidoPrincipal-starwars-link"><img src="static/img/Skillsoldado.png"><p class="clsparrafo"><span>Casco Soldado</span> $50.00 <a href="#"> Ver producto</a></p></li>
+						<li class="contenidoPrincipal-starwars-link"><img src="static/img/Skillstartwars2.png"><p class="clsparrafo"><span>Casco Bader</span> $75.000<a href="#">Ver producto</a></p></li>
+						<li class="contenidoPrincipal-starwars-link"><img src="static/img/Skillstartwars3.png"><p class="clsparrafo"><span>Yoda Atardecer</span> $45.000<a href="#">Ver producto</a></p></li>
+						<li class="contenidoPrincipal-starwars-link"><img src="static/img/Skillstartwars4.png"><p class="clsparrafo"><span>Soldado</span> $60.000<a href="#">Ver producto</a></p></li>
+						<li class="contenidoPrincipal-starwars-link"><img src="static/img/Skillstartwars5.png"><p class="clsparrafo"><span>Pequeño Yoda</span> $60.000<a href="#">Ver producto</a></p></li>
+						<li class="contenidoPrincipal-starwars-link"><li class="contenidoPrincipal-starwars-link"><img src="static/img/Skillstartwars6.png"><p class="clsparrafo"><span>Bader</span> $66.000<a href="#">Ver producto</a></p></li>
+					</div>
+				</ul>
+				<h2 class="subtitulo">Consolas</h2>
+				<ul class="contenidoPrincipal-consolas">
+					<div class="clsdiv_consolas_elements">	
+						<li class="contenidoPrincipal-consolas-link"><img src="static/img/Skillconsola1.png"><p class="clsparrafo"><span>Consola1</span> $50.00 <a href="#"> Ver producto</a></p></li>
+						<li class="contenidoPrincipal-consolas-link"><img src="static/img/Skillconsola2.png"><p class="clsparrafo"><span>Consola2</span> $75.000<a href="#">Ver producto</a></p></li>
+						<li class="contenidoPrincipal-consolas-link"><img src="static/img/Skillconsola3.png"><p class="clsparrafo"><span>Consola3</span> $45.000<a href="#">Ver producto</a></p></li>
+						<li class="contenidoPrincipal-consolas-link"><img src="static/img/Skillconsola4.png"><p class="clsparrafo"><span>Consola4</span> $60.000<a href="#">Ver producto</a></p></li>
+						<li class="contenidoPrincipal-consolas-link"><img src="static/img/Skillconsola5.png"><p class="clsparrafo"><span>Consola5</span> $60.000<a href="#">Ver producto</a></p></li>
+						<li class="contenidoPrincipal-consolas-link"><li class="contenidoPrincipal-consolas-link"><img src="static/img/Skillconsola6.png"><p class="clsparrafo"><span>Consola5</span> $66.000<a href="#">Ver producto</a></p></li>
+					</div>
+				</ul>
+				<h2 class="subtitulo">Diversos</h2>
+				<ul class="contenidoPrincipal-diverso">
+					<div class="clsdiv_diverso_elements">	
+						<li class="contenidoPrincipal-diverso-link"><img src="static/img/Skilldiverso1.png"><p class="clsparrafo"><span>Diversión1</span> $50.00 <a href="#"> Ver producto</a></p></li>
+						<li class="contenidoPrincipal-diverso-link"><img src="static/img/Skilldiverso2.png"><p class="clsparrafo"><span>Diversión2</span> $75.000<a href="#">Ver producto</a></p></li>
+						<li class="contenidoPrincipal-diverso-link"><img src="static/img/Skilldiverso3.png"><p class="clsparrafo"><span>Diversión3</span> $45.000<a href="#">Ver producto</a></p></li>
+						<li class="contenidoPrincipal-diverso-link"><img src="static/img/Skilldiverso4.png"><p class="clsparrafo"><span>Diversión4</span> $60.000<a href="#">Ver producto</a></p></li>
+						<li class="contenidoPrincipal-diverso-link"><img src="static/img/Skilldiverso5.png"><p class="clsparrafo"><span>Diversión5</span> $60.000<a href="#">Ver producto</a></p></li>
+						<li class="contenidoPrincipal-diverso-link"><li class="contenidoPrincipal-diverso-link"><img src="static/img/Skilldiverso6.png"><p class="clsparrafo"><span>Diversión5</span> $66.000<a href="#">Ver producto</a></p></li>
+					</div>
 				</ul>
 			</nav>
 		</div>
 
-		<section class="videoSobre">
-			<div class="container">
-				<iframe class="videoSobre-video" width="560" height="315" src="https://www.youtube.com/embed/bIlOsJzBVaY?list=PLh2Y_pKOa4UcF1BYPJR3EIMRi3nWAUxIp" frameborder="0" allowfullscreen></iframe>
-				
-				<div class="videoSobre-sobre">
-					<h2 class="videoSobre-sobre-title">Ventajas de Mini Alura</h2>
-					<ul class="videoSobre-sobre-list">
-						<li class="videoSobre-sobre-item">Estudia donde quiera</li>
-						<li class="videoSobre-sobre-item">Nuevos cursos todos los meses</li>
-						<li class="videoSobre-sobre-item">Cursos compatibles con el mercado</li>
-					</ul>
-					<button class="videoSobre-button">Inscrivase ya</button>
+		<section class="clscontacto"> <!-- videosobre-->
+			<!--<div class="container">-->
+				<div class="clsdiv_logo_contacto">
+					<img src="static/img/Logologo_contacto.png">
 				</div>
-			</div>
+			    <div class="clsdiv_legen_contacto">
+					<legend class="cls_legen_contacto">
+						<p class="clsparrafo_contato">Quienes somos</p>
+						<p class="clsparrafo_contato">Política de privacidad</p>
+						<p class="clsparrafo_contato">Programa de fidelidad</p>
+						<p class="clsparrafo_contato">Nuestras Tiendas</p>
+						<p class="clsparrafo_contato">Quiero ser franquiciado</p>
+						<p class="clsparrafo_contato">Anuncie aquí</p>
+					</legend>
+				</div>				
+				<div class="clscontacto-sobre">
+					<form class="cls_form_contacto">
+						<label for="hableconnosotros">Hable con nosotros<input type="text" id="nombreapellido" class="input-padre" required></label>
+							
+						<label for="correoelectronico"> Correo Electrónico </label>
+							<input type="email" id="correoelectronico" class="input-padre" required placeholder="Correo@dominio.com">
+						<label for="telefono">Teléfono</label>
+							<input type="tel" id="telefono" class="input-padre" required placeholder="Número telefónico">
+		
+						<fieldset>
+							<legend> Cómo le gustaría ser contactado ?</legend>    
+						</fieldset>
+	
+						<input type="submit" id="submit" class="clsboton_contacto" value="Enviar mensaje">
+					</form>
+				</div>
+			<!--</div> -->
 		</section>
 
 	</main>
@@ -77,75 +113,12 @@
 		<div class="container">
 
 			<section class="rodapePrincipal-navMap">
-				<h3 class="subtitulo">Mapa de cursos</h3>
+				<h3 class="subtitulo_footer"><p>Desarrollado por Delio Gutiérrez Valencia con la ayuda importante y definitiva de</p><p>Alura y todas las personas maravillosas que allí laboran</p>  </h3>
 				<nav class="rodapePrincipal-navMap-list">
-
-					<h4 class="navmap-list-title navmap-list-title-backend">Lenguajes Backend</h4>
-					<a class="rodapePrincipal-navMap-link" href="#">Java</a>
-					<a class="rodapePrincipal-navMap-link" href="#">PHP</a>
-					<a class="rodapePrincipal-navMap-link" href="#">Pascal</a>
-					<a class="rodapePrincipal-navMap-link" href="#">Scala</a>
-					<a class="rodapePrincipal-navMap-link" href="#">Python</a>
-					<a class="rodapePrincipal-navMap-link" href="#">Java Web</a>
-					<a class="rodapePrincipal-navMap-link" href="#">Assembly</a>
-					<a class="rodapePrincipal-navMap-link" href="#">Lógica de programación</a>
-
-					<h4 class="navmap-list-title navmap-list-title-frontend">Lenguajes Frontend</h4>
-					<a class="rodapePrincipal-navMap-link" href="#">Flexbox</a>
-					<a class="rodapePrincipal-navMap-link" href="#">Desarrollo Web</a>
-					<a class="rodapePrincipal-navMap-link" href="#">Javascript</a>
-					<a class="rodapePrincipal-navMap-link" href="#">AngularJS</a>
-					<a class="rodapePrincipal-navMap-link" href="#">ReactJS</a>
-					<a class="rodapePrincipal-navMap-link" href="#">Polymer</a>
-					
-					<h4 class="navmap-list-title navmap-list-title-framework">Frameworks</h4>
-					<a class="rodapePrincipal-navMap-link" href="#">Ruby on Rails</a>
-					<a class="rodapePrincipal-navMap-link" href="#">VRaptor</a>
-					<a class="rodapePrincipal-navMap-link" href="#">SpringMVC</a>
-					<a class="rodapePrincipal-navMap-link" href="#">NodeJS</a>
-					<a class="rodapePrincipal-navMap-link" href="#">Django</a>
-					<a class="rodapePrincipal-navMap-link" href="#">Bootstrap3</a>
-
-					<h4 class="navmap-list-title navmap-list-title-bancoDeDados">Banco de datos</h4>
-					<a class="rodapePrincipal-navMap-link" href="#">MySQL</a>
-					<a class="rodapePrincipal-navMap-link" href="#">MariaDB</a>
-					<a class="rodapePrincipal-navMap-link" href="#">Postegres</a>
-
 				</nav>
 			</section>
 
 		</div>
-
-		<section class="rodapePrincipal-patrocinadores">
-			<div class="container">
-				<ul class="rodapePrincipal-patrocinadores-list">
-					<li>
-						<a class="rodapePrincipal-patrocinadores-list-link patrocinadores-list-link-alura" href="#">
-							<img src="static/img/logos/alura.svg" alt="Logo da Alura">
-						</a>
-					</li>
-					<li>
-						<a class="rodapePrincipal-patrocinadores-list-link patrocinadores-list-link-caelum" href="#">
-							<img src="static/img/logos/caelum.svg" alt="Logo da Caelum">
-						</a>
-					</li>
-					<li>
-						<a class="rodapePrincipal-patrocinadores-list-link patrocinadores-list-link-casaDoCodigo" href="#">
-							<img src="static/img/logos/cdc.svg" alt="Logo da Casa do Código">
-						</a>
-					</li>
-				</ul>
-				<form class="rodapePrincipal-contatoForm" action="#">
-					<fieldset>
-						<legend class="rodapePrincipal-contatoForm-legend" for="email-contato">Entre en contacto</legend>
-						<div class="rodapePrincipal-contatoForm-fieldset"> 
-							<input class="rodapePrincipal-contatoForm-emailInput" type="email" name="email-contato" id="email-contato">
-							<button class="rodapePrincipal-contatoForm-submit" type="submit">Enviar</button>
-						</div>
-					</fieldset>
-				</form>
-			</div>
-		</section>
 	</footer>
 
 </body>

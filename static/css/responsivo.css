@@ -1,0 +1,137 @@
+
+@media(max-width: 600px) {
+
+	.container {
+		width: 85%;	
+	}
+
+	.subtitulo {
+		text-align: left;
+	}
+
+	.rodapePrincipal-contatoForm-fieldset{
+		flex-direction: column;
+		align-items: center;
+	}
+	.cls_campo_busqueda{
+		width: auto;
+	}
+
+	.clsboton_login, .clsdiv_logo_busqueda {
+		width: 100%;
+	}
+
+    .headerPrincipal, .contenidoPrincipal{
+        width: 100%;
+    }
+
+	.headerPrincipal-nav-link {
+		border-radius: 5px;
+		border: 1px solid #9799A6;
+	}
+
+	.headerPrincipal-nav-link:hover {
+		color: #FFF;
+		background-color: #9799A6;
+	}
+
+	.headerPrincipal-titulo {
+		margin: 0;
+	}
+
+	.headerPrincipal-nav {
+		width: auto;
+	}
+
+	.headerPrincipal-nav-link {
+		width: auto;
+		margin: 0 0 0 10px;
+	}
+
+	.rodapePrincipal-contatoForm {
+		margin-top: 0;
+		text-align: left;
+	}
+
+	.contenidoPrincipal-cursos-link:nth-child(3n) {
+		margin-right: 0;
+	}
+
+	.contenidoPrincipal-cursos-link:nth-child(3n+1) {
+		margin-left: 0;
+	}
+
+    .contenidoPrincipal-starwars{
+        width: auto;
+        flex-direction: column;
+    }
+
+   
+
+    .contenidoPrincipal-starwars .clsdiv_starwars_elements,  .contenidoPrincipal-consolas .clsdiv_consolas_elements, .contenidoPrincipal-diverso .clsdiv_diverso_elements{
+        width: auto;
+        flex-direction: column;
+    }
+
+    .contenidoPrincipal-starwars-link, .contenidoPrincipal-consolas-link,  .contenidoPrincipal-diverso-link{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+		padding: 1rem 0;
+    }
+
+    .subtitulo{
+        text-align: center;
+        margin: auto;
+        padding: 2rem;
+    }
+
+    .clsdiv_logo_contacto{
+        margin: auto;
+        width: auto;
+
+    }
+    .clscontacto {
+        margin: auto;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .clscontacto-sobre, .input-padre{
+        margin: auto;
+        width: auto;
+        text-align: center;
+        align-items: center;
+    }
+
+   
+}
+
+/*@media(min-width: 1000px) {
+	.contenidoPrincipal-cursos-link {
+		margin: 1.333%;
+	}
+
+	.contenidoPrincipal-cursos-link:nth-child(3n) {
+		margin-right: 1.33%;
+	}
+
+	.contenidoPrincipal-cursos-link:nth-child(3n+1) {
+		margin-left: 1.333%;
+	}
+
+	.contenidoPrincipal-cursos-link:nth-child(4n) {
+		margin-right: 0;
+	}
+
+	.contenidoPrincipal-cursos-link:nth-child(4n+1) {
+		margin-left: 0;
+	}
+
+	.videoSobre-sobre {
+		margin-left: 1.5em;
+	}
+
+}*/
+
+

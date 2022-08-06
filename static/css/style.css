@@ -11,7 +11,158 @@ body {
 .headerPrincipal {
 	background-color: #FFF;
 	padding: 20px 0;
+	margin: 0px 30px 30px 0px;
+	/* Margin arriba derecho izquierdo abajo*/
+
 }
+
+.headerPrincipal-nav .rodapePrincipal-contatoForm-fieldset{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.rodapePrincipal-contatoForm-fieldset  .clsdiv_logo_busqueda{
+	display: flex;
+	justify-content: space-between;
+	width: auto;
+}
+
+.clsdiv_logo_busqueda .cls_campo_busqueda{
+	  width: 100%;
+      height: 40px;
+      margin: 0 auto;
+	  border: 1px solid rgb(116, 185, 231);
+	  background: rgba(219, 222, 223, 0.884);
+      border-radius: 10px;
+}
+
+
+.rodapePrincipal-contatoForm-fieldset .clsboton_login{
+	   /* Le decimos al boton que ocupe el 40% del espacio disponible*/
+	   width: 20%;
+	   /*El padding amplia internamente el boton y lo hace ver mas amplio*/
+	   padding: 15px 0; /* 15 px arriba y abajo y cero para los costados*/
+	   /* Tamaño de letra*/
+	   font-size: 18px;
+	   /* Colocamos negrita al título*/
+	   font-weight: bold;
+	   /* Damos un color de letra al texto */
+	   color: #2c7cf3;
+	   /* Damos un color de fondo al botón */
+	   background: white;
+	   /* Quitamos el borde al boton no se ve muy bien */
+	   border: 1px solid rgb(116, 185, 231);
+	   /* Redondeamos las esquinas del botón */
+	   border-radius: 5px;
+	   /* Da una espera en segundos para cambiar el background, para el ejemplo tiene 2 segundos*/
+	   transition: 2s background;
+	   /* Cambia la flecha del cursor por una mano */
+	   cursor: pointer;
+	  
+}
+
+.headerPrincipal-nav .clsimgencabezado{
+	margin-top: 5px;
+	width: 100%;
+}
+
+.subtitulo{
+	margin-top: 50px;
+	font-weight: bold;
+	font-size: 32px;
+	margin-bottom: 10px;
+	margin-left: 200px;
+	text-align: left;
+}
+
+.contenidoPrincipal-starwars{
+	width: 100%;
+	display:flex; /* Se coloca un elemento al lado del otro */
+	justify-content: center;
+}
+
+.contenidoPrincipal-starwars .clsdiv_starwars_elements{
+	width: 80%;
+	display: flex; /* Colocaa el texto de Mini Alura al costado izquierdo del otro texto que dice 
+    Estudia donde quiera Nuevos cursos ... */
+	align-items: center;
+	justify-content: space-evenly;
+}
+.contenidoPrincipal-starwars .clsparrafo{
+    display: flex; /* Colocaa el texto de Mini Alura al costado izquierdo del otro texto que dice 
+    Estudia donde quiera Nuevos cursos ... */
+    flex-direction: column;
+	text-align: center;
+
+}
+
+.contenidoPrincipal-starwars .clsparrafo a{
+	text-decoration: none; /* Quitamos el subrayado del enlace */
+    color: blue; /* Color de texto del enlace*/
+}
+
+/* CONSOLA */
+
+.contenidoPrincipal-consolas{
+	width: 100%;
+	display:flex; /* Se coloca un elemento al lado del otro */
+	justify-content: center;
+}
+
+.contenidoPrincipal-consolas .clsdiv_consolas_elements{
+	width: 80%;
+	display: flex; /* Colocaa el texto de Mini Alura al costado izquierdo del otro texto que dice 
+    Estudia donde quiera Nuevos cursos ... */
+	align-items: center;
+	justify-content: space-evenly;
+}
+.contenidoPrincipal-consolas .clsparrafo{
+    display: flex; /* Colocaa el texto de Mini Alura al costado izquierdo del otro texto que dice 
+    Estudia donde quiera Nuevos cursos ... */
+    flex-direction: column;
+	text-align: center;
+
+}
+
+.contenidoPrincipal-consolas .clsparrafo a{
+	text-decoration: none; /* Quitamos el subrayado del enlace */
+    color: blue; /* Color de texto del enlace*/
+}
+
+
+/* END CONSOLA */
+
+/* DIVERSIÓN */
+
+.contenidoPrincipal-diverso{
+	width: 100%;
+	display:flex; /* Se coloca un elemento al lado del otro */
+	justify-content: center;
+}
+
+.contenidoPrincipal-diverso .clsdiv_diverso_elements{
+	width: 80%;
+	display: flex; /* Colocaa el texto de Mini Alura al costado izquierdo del otro texto que dice 
+    Estudia donde quiera Nuevos cursos ... */
+	align-items: center;
+	justify-content: space-evenly;
+}
+.contenidoPrincipal-diverso .clsparrafo{
+    display: flex; /* Colocaa el texto de Mini Alura al costado izquierdo del otro texto que dice 
+    Estudia donde quiera Nuevos cursos ... */
+    flex-direction: column;
+	text-align: center;
+
+}
+
+.contenidoPrincipal-diverso .clsparrafo a{
+	text-decoration: none; /* Quitamos el subrayado del enlace */
+    color: blue; /* Color de texto del enlace*/
+}
+
+
+/* END DIVERSIÓN */
 
 .headerPrincipal-titulo {
 	font-weight: bold;
@@ -41,12 +192,7 @@ body {
 	margin-bottom: 20px;
 }
 
-.subtitulo {
-	font-weight: bold;
-	font-size: 32px;
-	margin-bottom: 10px;
-	text-align: center;
-}
+
 
 .contenidoPrincipal-cursos-link {
 	height: 100px;
@@ -92,7 +238,7 @@ body {
 
 
 .rodapePrincipal {
-	background-color: #324C64;
+	background-color: #ebf1f7;
 	padding-top: 20px;
 }
 
@@ -153,135 +299,85 @@ body {
 	padding: 10px;
 }
 
-.rodapePrincipal-contatoForm-submit {
-	border-top-right-radius: 5px;
-	border-bottom-right-radius: 5px;
-	background-color: #4DBA7A;
+
+.clscontacto {
+	display: flex;
+	margin-left: 80px;
+	margin-top: 50px;
+	width: 85%;
+	justify-content: space-between;
+	background-color: #c8eeff;
 	color: #FFF;
-	cursor: pointer;
-	
-}
-
-.rodapePrincipal-contatoForm-submit,
-.rodapePrincipal-contatoForm-emailInput {
-	outline: 0;
-	border: 1px solid #4DBA7A;
-	box-sizing: border-box;
-	font-size: 16px;
-}
-
-.videoSobre {
-	background-color: #5E9EDC;
 	padding: 25px 0;
+	color: rgb(82, 92, 95)
+}
+
+.clsdiv_logo_contacto{
+	margin-left: 60px;
+	width: 20%;
+
+}
+.cls_legen_contacto {
+	width: 100%;
+	font-size: 20px;
+	padding-top: 10px;
 
 }
 
-.videoSobre-video {
-	max-width: 100%;
+.cls_legen_contacto .clsparrafo_contato{
+	padding: 10px;
+	font-size: 20px;
 }
 
-.videoSobre .container {
-	color: #FFF;
+.clscontacto-sobre {
+	width: 30%;
+	display: flex;
+	flex-direction: column;
 }
 
-.videoSobre-sobre-title {
-	font-size: 1.2em;
-	font-weight: bolder;
+.clscontacto-sobre .cls_form_contacto .input-padre{
+	/* al colocar display block, estamos colocando los elementos de forma vertical */
+   display: block;
+   margin: 0 0 20px;
+   /* padding amplia por así decirlo los espacios donde el usuario coloca la información,
+   espacio entre el borde y el contenido */
+   padding: 10px 25px;
+   /* de los 940 que se dan en el main, los input van a ocupar el 50% de ese espacio */
+   width: 50%;
+
 }
 
-.videoSobre-sobre {
-	font-size: 1.3em;
-	line-height: 2;
-}
 
-.videoSobre-button {
-	border-radius: 8px;
-	background-color: #ec6e5a;
-	display: block;
-	color: #FFF;
-	border: none;
-	height: 50px;
-	font-size: .8em;
-	outline: none;
+.cls_form_contacto .clsboton_contacto{
+	/* Le decimos al boton que ocupe el 40% del espacio disponible*/
+	width: 50%;
+	/*El padding amplia internamente el boton y lo hace ver mas amplio*/
+	padding: 15px 0; /* 15 px arriba y abajo y cero para los costados*/
+	/* Tamaño de letra*/
+	font-size: 15px;
+	/* Colocamos negrita al título*/
+	font-weight: bold;
+	/* Damos un color de letra al texto */
+	color: white;
+	/* Damos un color de fondo al botón */
+	background: rgb(63, 170, 241);
+	/* Quitamos el borde al boton no se ve muy bien */
+	border: 1px solid rgb(116, 185, 231);
+	/* Redondeamos las esquinas del botón */
+	border-radius: 5px;
+	/* Da una espera en segundos para cambiar el background, para el ejemplo tiene 2 segundos*/
+	transition: 2s background;
+	/* Cambia la flecha del cursor por una mano */
+	cursor: pointer;
+   
 }
 
 .rodapePrincipal-contatoForm-legend {
 	margin-bottom: 10px;
 }
 
-@media(min-width: 769px) {
-
-	.container {
-		width: 85%;	
-	}
-
-	.subtitulo {
-		text-align: left;
-	}
-
-	.headerPrincipal-nav-link {
-		border-radius: 5px;
-		border: 1px solid #9799A6;
-	}
-
-	.headerPrincipal-nav-link:hover {
-		color: #FFF;
-		background-color: #9799A6;
-	}
-
-	.headerPrincipal-titulo {
-		margin: 0;
-	}
-
-	.headerPrincipal-nav {
-		width: auto;
-	}
-
-	.headerPrincipal-nav-link {
-		width: auto;
-		margin: 0 0 0 10px;
-	}
-
-	.rodapePrincipal-contatoForm {
-		margin-top: 0;
-		text-align: left;
-	}
-
-	.contenidoPrincipal-cursos-link:nth-child(3n) {
-		margin-right: 0;
-	}
-
-	.contenidoPrincipal-cursos-link:nth-child(3n+1) {
-		margin-left: 0;
-	}
-
+.subtitulo_footer{
+	text-align: center;
+	font-size: 10px;
+	margin-bottom: 10px;
 }
-
-@media(min-width: 1000px) {
-	.contenidoPrincipal-cursos-link {
-		margin: 1.333%;
-	}
-
-	.contenidoPrincipal-cursos-link:nth-child(3n) {
-		margin-right: 1.33%;
-	}
-
-	.contenidoPrincipal-cursos-link:nth-child(3n+1) {
-		margin-left: 1.333%;
-	}
-
-	.contenidoPrincipal-cursos-link:nth-child(4n) {
-		margin-right: 0;
-	}
-
-	.contenidoPrincipal-cursos-link:nth-child(4n+1) {
-		margin-left: 0;
-	}
-
-	.videoSobre-sobre {
-		margin-left: 1.5em;
-	}
-
-}
-
-

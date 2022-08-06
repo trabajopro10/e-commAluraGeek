@@ -20,8 +20,10 @@
 
 /* Ahora dar el formato de presentación a los elementos que conforman el menú, tomamos
   la clase padre headerPrincipal-nav */
-.headerPrincipal-nav {
+.headerPrincipal-nav .rodapePrincipal-contatoForm-fieldset{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* Imágenes nuestros cursos */
